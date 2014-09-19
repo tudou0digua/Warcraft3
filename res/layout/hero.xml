@@ -1,0 +1,562 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+	<RelativeLayout 
+	    android:id="@+id/relativelayout1"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:background="#000000" >
+	
+	    <ImageView
+	        android:id="@+id/imageName"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginTop="10dp"
+	        android:src="@drawable/paladin3" />
+	
+	    <TextView
+	        android:id="@+id/name"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_alignLeft="@+id/imageName"
+	        android:layout_alignRight="@+id/imageName"
+	        android:layout_below="@+id/imageName"
+	        android:gravity="center_horizontal"
+	        android:text="圣骑士"
+	        android:textColor="#FFFFF0" />
+	
+	    <SeekBar
+	        android:id="@+id/seekBar1"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignTop="@+id/imageName"
+	        android:layout_marginRight="10dp"
+	        android:layout_marginLeft="5dp"
+	        android:max="10"
+	        android:progress="1"
+	        android:layout_toRightOf="@+id/imageName" />
+	
+	    <TableLayout
+	        android:id="@+id/tableLayout2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/seekBar1"
+	        android:layout_alignRight="@+id/seekBar1"
+	        android:layout_below="@+id/seekBar1" >
+	
+	        <TableRow
+	            android:id="@+id/tableRow1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/textView2"
+	                android:layout_width="60dp"
+	                android:layout_height="wrap_content"
+	                android:background="#AEEEEE"
+	                android:gravity="center_horizontal"
+	                android:text="主要属性"/>
+	
+	            <TextView
+	                android:id="@+id/textView3"
+	                android:layout_width="70dp"
+	                android:layout_height="wrap_content"
+	                android:gravity="left"
+	                android:text="力量"
+	                android:textColor="#FFFFE0" />
+	
+	            <TextView
+	                android:id="@+id/textView4"
+	                android:layout_width="60dp"
+	                android:layout_height="wrap_content"
+	                android:background="#CAE1FF"
+	                android:gravity="center_horizontal"
+	                android:text="每级"/>
+	
+	            <TextView
+	                android:id="@+id/textView5"
+	                android:layout_width="35dp"
+	                android:layout_height="wrap_content"
+	                android:gravity="left"
+	                android:text=" "
+	                android:textColor="#FFFFE0" />
+	
+	        </TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/textView6"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="#CAE1FF"
+	                android:gravity="center_horizontal"
+	                android:text="移动速度" />
+	
+	            <TextView
+	                android:id="@+id/textView7"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="中等(270)"
+	                android:textColor="#FFFFE0" />
+	
+	            <TextView
+	                android:id="@+id/textView8"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="#AEEEEE"
+	                android:text="增加力量" />
+	
+	            <TextView
+	                android:id="@+id/textView9"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="2.7"
+	                android:textColor="#FFFFE0" />
+	
+	        </TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow3"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/textView10"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="#AEEEEE"
+	                android:gravity="center_horizontal"
+	                android:text="快捷键" />
+	
+	            <TextView
+	                android:id="@+id/textView11"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="L"
+	                android:textColor="#FFFFE0" />
+	
+	            <TextView
+	                android:id="@+id/textView12"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="#CAE1FF"
+	                android:text="增加敏捷" />
+	
+	            <TextView
+	                android:id="@+id/textView13"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="1.5"
+	                android:textColor="#FFFFE0" />
+	
+	        </TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow4"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/textView14"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="#CAE1FF"
+	                android:gravity="center_horizontal"
+	                android:text="攻击间隔" />
+	
+	            <TextView
+	                android:id="@+id/textView15"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="2.2"
+	                android:textColor="#FFFFE0" />
+	
+	            <TextView
+	                android:id="@+id/textView16"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="#AEEEEE"
+	                android:text="增加智力" />
+	
+	            <TextView
+	                android:id="@+id/textView17"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:text="1.8"
+	                android:textColor="#FFFFE0" />
+	
+	        </TableRow>
+	    </TableLayout>
+	
+	    <TableLayout
+	        android:id="@+id/tablelayout3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/name"
+	        android:layout_alignRight="@+id/seekBar1"
+	        android:layout_marginTop="10dp"
+	        android:layout_below="@+id/tableLayout2" >
+	
+	        <TableRow
+	            android:id="@+id/tableRow5"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/textView18"
+	                android:layout_width="60dp"
+	                android:layout_height="wrap_content"
+	                android:background="#CAE1FF"
+	                android:gravity="center_horizontal"
+	                android:text="等级" />
+	
+	            <TextView
+	                android:id="@+id/textView19"
+	                android:layout_width="60dp"
+	                android:layout_height="wrap_content"
+	                android:background="#AEEEEE"
+	                android:gravity="center_horizontal"
+	                android:text="攻击" />
+	
+	            <TextView
+	                android:id="@+id/textView20"
+	                android:layout_width="60dp"
+	                android:layout_height="wrap_content"
+	                android:background="#CAE1FF"
+	                android:gravity="center_horizontal"
+	                android:text="护甲" />
+	
+	            <TextView
+	                android:id="@+id/textView21"
+	                android:layout_width="60dp"
+	                android:layout_height="wrap_content"
+	                android:background="#AEEEEE"
+	                android:gravity="center_horizontal"
+	                android:text="生命" />
+	
+	            <TextView
+	                android:id="@+id/textView22"
+	                android:layout_width="60dp"
+	                android:layout_height="wrap_content"
+	                android:background="#CAE1FF"
+	                android:gravity="center_horizontal"
+	                android:text="魔法" />
+	
+	        </TableRow>
+	
+	        <TableRow
+	            android:id="@+id/tableRow6"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	
+	            <TextView
+	                android:id="@+id/textView23"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="#AEEEEE"
+	                android:gravity="center_horizontal"
+	                android:text="1" />
+	
+	            <TextView
+	                android:id="@+id/textView24"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="#CAE1FF"
+	                android:gravity="center_horizontal"
+	                android:text="24-34" />
+	
+	            <TextView
+	                android:id="@+id/textView25"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="#AEEEEE"
+	                android:gravity="center_horizontal"
+	                android:text="4" />
+	
+	            <TextView
+	                android:id="@+id/textView26"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="#CAE1FF"
+	                android:gravity="center_horizontal"
+	                android:text="650" />
+	
+	            <TextView
+	                android:id="@+id/textView27"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:background="#AEEEEE"
+	                android:gravity="center_horizontal"
+	                android:text="255" />
+	
+	        </TableRow>
+	    </TableLayout>
+	
+	    <LinearLayout
+	        android:id="@+id/linearlayout1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="10dp"
+	        android:layout_alignLeft="@+id/tablelayout3"
+	        android:layout_alignRight="@+id/tablelayout3"
+	        android:layout_below="@+id/tablelayout3"
+	        android:orientation="vertical" >
+	
+	        <TextView
+	            android:id="@+id/textView28"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:text="虽然圣骑士曾经在洛丹伦大陆被人民尊敬和爱戴，但他们目前陷入了困境。整个银手骑士团因为拒绝杀戮被认为已经被不死军团污染的无辜平民而被解散。被从他们的家园驱逐出来之后，圣骑士仍然无私地守护着被邪恶不断蚕食的人性。拥有光明力量的圣骑士以战锤和圣火作战，铲除一切欺负弱小善良人民的邪恶。"
+	            android:textColor="#1874CD" />
+	
+	    </LinearLayout>
+	
+	    <RelativeLayout
+	        android:id="@+id/relativelayout2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/linearlayout1"
+	        android:layout_alignRight="@+id/linearlayout1"
+	        android:layout_below="@+id/linearlayout1"
+	        android:layout_marginTop="19dp" >
+	
+	        <View
+	            android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="#FF909090" />
+	        <ImageView
+	            android:id="@+id/imageView2"
+	            android:layout_width="64dp"
+	            android:layout_height="64dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginTop="10dp"
+	            android:src="@drawable/holybolt" />
+	
+	        <TextView
+	            android:id="@+id/textView29"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignTop="@+id/imageView2"
+	            android:layout_marginLeft="2dp"
+	            android:layout_toRightOf="@+id/imageView2"
+	            android:text="圣光 Holy Light"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="#EEDC82" />
+	
+	        <TextView
+	            android:id="@+id/textView30"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/textView29"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/textView29"
+	            android:text="圣光可以医治同伴或者对不死族的敌人产生伤害。"
+	            android:textColor="#1874CD"
+	            android:textSize="12sp" />
+	
+	        <TextView
+	            android:id="@+id/textView31"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:layout_alignLeft="@+id/imageView2"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/imageView2"
+	            android:text="使用间隔:5秒 魔法消耗:65\n距离80 作用范围:单个单位\n等级1:治疗200生命/伤害100生命\n等级2:治疗400生命/伤害200生命\n等级3:治疗600生命/伤害300生命"
+	            android:textColor="#1874CD" />
+	
+	    </RelativeLayout>
+	    
+	    <RelativeLayout
+	        android:id="@+id/relativelayout3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/linearlayout1"
+	        android:layout_alignRight="@+id/linearlayout1"
+	        android:layout_below="@+id/relativelayout2"
+	        android:layout_marginTop="19dp" >
+	
+	        <View
+	            android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="#FF909090" />
+	        <ImageView
+	            android:id="@+id/imageView3"
+	            android:layout_width="64dp"
+	            android:layout_height="64dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginTop="10dp"
+	            android:src="@drawable/divineshield" />
+	
+	        <TextView
+	            android:id="@+id/textView32"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignTop="@+id/imageView3"
+	            android:layout_marginLeft="2dp"
+	            android:layout_toRightOf="@+id/imageView3"
+	            android:text="神圣护盾 Divine Shield"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="#EEDC82" />
+	
+	        <TextView
+	            android:id="@+id/textView33"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/textView32"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/textView32"
+	            android:text="不可思议的神盾保护着圣骑士，使他在一定时间内不受物理和魔法攻击。"
+	            android:textColor="#1874CD" 
+	            android:textSize="12sp"/>
+	
+	        <TextView
+	            android:id="@+id/textView34"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:layout_alignLeft="@+id/imageView3"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/imageView3"
+	            android:text="使用间隔:5秒/30秒/45秒\n魔法消耗:25\n等级1:无敌15秒\n等级2:无敌30秒\n等级3:无敌45秒"
+	            android:textColor="#1874CD" />
+	
+	    </RelativeLayout>
+	    
+	    <RelativeLayout
+	        android:id="@+id/relativelayout4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/linearlayout1"
+	        android:layout_alignRight="@+id/linearlayout1"
+	        android:layout_below="@+id/relativelayout3"
+	        android:layout_marginTop="19dp" >
+	
+	        <View
+	            android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="#FF909090" />
+	        <ImageView
+	            android:id="@+id/imageView4"
+	            android:layout_width="64dp"
+	            android:layout_height="64dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginTop="10dp"
+	            android:src="@drawable/devotion" />
+	
+	        <TextView
+	            android:id="@+id/textView35"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignTop="@+id/imageView4"
+	            android:layout_marginLeft="2dp"
+	            android:layout_toRightOf="@+id/imageView4"
+	            android:text="专注光环 Devotion Aura"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="#EEDC82" />
+	
+	        <TextView
+	            android:id="@+id/textView36"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/textView35"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/textView35"
+	            android:text="增加光环范围内友军单位的护甲。"
+	            android:textColor="#1874CD"
+	            android:textSize="12sp" />
+	
+	        <TextView
+	            android:id="@+id/textView37"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:layout_alignLeft="@+id/imageView4"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/imageView4"
+	            android:text="作用范围:90\n等级1:+1.5点护甲\n等级2:+3点护甲\n等级3:+4.5点护甲"
+	            android:textColor="#1874CD"/>
+	
+	    </RelativeLayout>
+	    
+	    <RelativeLayout
+	        android:id="@+id/relativelayout5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/linearlayout1"
+	        android:layout_alignRight="@+id/linearlayout1"
+	        android:layout_below="@+id/relativelayout4"
+	        android:layout_marginTop="19dp" >
+	
+	        <View
+	            android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="#FF909090" />
+	        <ImageView
+	            android:id="@+id/imageView5"
+	            android:layout_width="64dp"
+	            android:layout_height="64dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginLeft="10dp"
+	            android:layout_marginTop="10dp"
+	            android:src="@drawable/resurrection" />
+	
+	        <TextView
+	            android:id="@+id/textView38"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignTop="@+id/imageView5"
+	            android:layout_marginLeft="2dp"
+	            android:layout_toRightOf="@+id/imageView5"
+	            android:text="复活 Resurrection"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="#EEDC82" />
+	
+	        <TextView
+	            android:id="@+id/textView39"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/textView38"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/textView38"
+	            android:text="最多可以同时复活个死去的友军单位如果其复活范围内死去的单位多于个法术会自动选择最强大的个单位复活最多可以同时复活个死去的友军单位如果其复活范围内死去的单位多于个法术会自动选择最强大的个单位复活"
+	            android:textColor="#1874CD"
+	            android:textSize="10sp" />
+	
+	        <TextView
+	            android:id="@+id/textView40"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:layout_alignLeft="@+id/imageView5"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/imageView5"
+	            android:text="使用间隔:240秒\n魔法消耗:200\n距离:400\n作用范围:900\n效果:复活最多6个单位"
+	            android:textColor="#1874CD" />
+	
+	    </RelativeLayout>
+	
+	</RelativeLayout>
+
+</ScrollView>			

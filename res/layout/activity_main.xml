@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    xmlns:tools="http://schemas.android.com/tools"  
+    android:layout_width="match_parent"  
+    android:layout_height="match_parent">  
+  
+    <android.support.v4.view.ViewPager  
+        android:id="@+id/pager"  
+        android:layout_width="match_parent"  
+        android:layout_height="match_parent" />
+    <FrameLayout 
+        android:id="@+id/detail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">     
+    </FrameLayout>  
+    
+    <FrameLayout 
+        android:id="@+id/detail_human"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">     
+    </FrameLayout>  
+    
+    <FrameLayout 
+        android:id="@+id/detail_nightelves"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">     
+    </FrameLayout>  
+    
+    <FrameLayout 
+        android:id="@+id/detail_neutral"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">     
+    </FrameLayout>  
+    
+    <FrameLayout 
+        android:id="@+id/detail_orcish"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">     
+    </FrameLayout>  
+    
+    <FrameLayout 
+        android:id="@+id/detail_undead"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">     
+    </FrameLayout>  
+  
+</RelativeLayout>  

@@ -1,0 +1,909 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#000000" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/peasant3" />
+
+        <TableLayout
+            android:id="@+id/tabelLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imageView1"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/imageView1" >
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView1"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="#AEEEEE"
+                    android:gravity="right"
+                    android:text="等级" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CAE1FF"
+                    android:gravity="right"
+                    android:text="花费" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="75G 0L 1F"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AEEEEE"
+                    android:gravity="right"
+                    android:text="单位类型" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="普通/地面(1)"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CAE1FF"
+                    android:gravity="right"
+                    android:text="攻击类型" />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="普通"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AEEEEE"
+                    android:gravity="right"
+                    android:text="武器类型" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="普通"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CAE1FF"
+                    android:gravity="right"
+                    android:text="护甲类型" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="中甲"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AEEEEE"
+                    android:gravity="right"
+                    android:text="护甲" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CAE1FF"
+                    android:gravity="right"
+                    android:text="地面攻击" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="5-6"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AEEEEE"
+                    android:gravity="right"
+                    android:text="空中攻击" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="无"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CAE1FF"
+                    android:gravity="right"
+                    android:text="生命值" />
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="220"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AEEEEE"
+                    android:gravity="right"
+                    android:text="生命恢复" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="总是"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView23"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CAE1FF"
+                    android:gravity="right"
+                    android:text="魔法" />
+
+                <TextView
+                    android:id="@+id/textView24"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="无"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AEEEEE"
+                    android:gravity="right"
+                    android:text="魔法回复" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/tableLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/imageView1"
+            android:layout_below="@+id/imageView1"
+            android:layout_marginTop="8dp" >
+
+            <TableRow
+                android:id="@+id/tableRow14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView27"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:background="#CAE1FF"
+                    android:gravity="right"
+                    android:text="攻击范围" />
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:text="近战"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AEEEEE"
+                    android:gravity="right"
+                    android:text="白天视野" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="80"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CAE1FF"
+                    android:gravity="right"
+                    android:text="夜间视野" />
+
+                <TextView
+                    android:id="@+id/textView32"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="60"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AEEEEE"
+                    android:gravity="right"
+                    android:text="移动速度" />
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="慢(190)"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CAE1FF"
+                    android:gravity="right"
+                    android:text="训练时间" />
+
+                <TextView
+                    android:id="@+id/textView36"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView37"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AEEEEE"
+                    android:gravity="right"
+                    android:text="生产地" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="城镇大厅"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView39"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#CAE1FF"
+                    android:gravity="right"
+                    android:text="需求" />
+
+                <TextView
+                    android:id="@+id/textView40"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow21"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/textView41"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="#AEEEEE"
+                    android:gravity="right"
+                    android:text="快捷键" />
+
+                <TextView
+                    android:id="@+id/textView42"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="P"
+                    android:textColor="#FFFFE0" />
+            </TableRow>
+        </TableLayout>
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/tableLayout1"
+            android:layout_alignRight="@+id/tabelLayout"
+            android:layout_below="@+id/tableLayout1"
+            android:layout_marginTop="20dp"
+            android:text="农民是洛丹伦大陆各个国家征召而来的纯朴，勤劳的劳力。他们开采军队作战所需的黄金和木材，保障了联盟顺利推进。他们不仅可以采矿，还能建造各种建筑物。农民们以服务军队为荣，同时在听说了兽族的暴行后，也懂得如何使用锄头和斧头自卫。"
+            android:textColor="#1874CD" />
+		
+        <RelativeLayout
+	        android:id="@+id/relativelayout2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/imageView1"
+	        android:layout_alignRight="@+id/tabelLayout"
+	        android:layout_below="@+id/textView45"
+	        android:layout_marginTop="19dp" >
+	
+	        <View
+	            android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="#FF909090" />
+	        <ImageView
+	            android:id="@+id/imageView2"
+	            android:layout_width="64dp"
+	            android:layout_height="64dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="10dp"
+	            android:src="@drawable/holybolt" />
+	
+	        <TextView
+	            android:id="@+id/skill1name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignTop="@+id/imageView2"
+	            android:layout_marginLeft="2dp"
+	            android:layout_toRightOf="@+id/imageView2"
+	            android:text="圣光 Holy Light"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="#EEDC82"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/skill1desc"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/skill1name"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/skill1name"
+	            android:text="圣光可以医治同伴或者对不死族的敌人产生伤害。"
+	            android:textColor="#1874CD"
+	            android:textSize="12sp" />
+	
+	        <TextView
+	            android:id="@+id/skill1detaill"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:layout_alignLeft="@+id/imageView2"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/imageView2"
+	            android:text="使用间隔:5秒 魔法消耗:65\n距离80 作用范围:单个单位\n等级1:治疗200生命/伤害100生命\n等级2:治疗400生命/伤害200生命\n等级3:治疗600生命/伤害300生命"
+	            android:textColor="#1874CD" />
+	
+	    </RelativeLayout>
+        
+        <RelativeLayout
+	        android:id="@+id/relativelayout3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/imageView1"
+	        android:layout_alignRight="@+id/tabelLayout"
+	        android:layout_below="@+id/relativelayout2"
+	        android:layout_marginTop="19dp" >
+	
+	        <View
+	            android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="#FF909090" />
+	        <ImageView
+	            android:id="@+id/imageView3"
+	            android:layout_width="64dp"
+	            android:layout_height="64dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="10dp"
+	            android:src="@drawable/holybolt" />
+	
+	        <TextView
+	            android:id="@+id/skill2name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignTop="@+id/imageView3"
+	            android:layout_marginLeft="2dp"
+	            android:layout_toRightOf="@+id/imageView3"
+	            android:text="圣光 Holy Light"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="#EEDC82"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/skill2desc"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/skill2name"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/skill2name"
+	            android:text="圣光可以医治同伴或者对不死族的敌人产生伤害。"
+	            android:textColor="#1874CD"
+	            android:textSize="12sp" />
+	
+	        <TextView
+	            android:id="@+id/skill2detaill"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:layout_alignLeft="@+id/imageView3"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/imageView3"
+	            android:text="使用间隔:5秒 魔法消耗:65\n距离80 作用范围:单个单位\n等级1:治疗200生命/伤害100生命\n等级2:治疗400生命/伤害200生命\n等级3:治疗600生命/伤害300生命"
+	            android:textColor="#1874CD" />
+	
+	    </RelativeLayout>
+	    
+        <RelativeLayout
+	        android:id="@+id/relativelayout4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/imageView1"
+	        android:layout_alignRight="@+id/tabelLayout"
+	        android:layout_below="@+id/relativelayout3"
+	        android:layout_marginTop="19dp" >
+	
+	        <View
+	            android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="#FF909090" />
+	        <ImageView
+	            android:id="@+id/imageView4"
+	            android:layout_width="64dp"
+	            android:layout_height="64dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="10dp"
+	            android:src="@drawable/holybolt" />
+	
+	        <TextView
+	            android:id="@+id/skill3name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignTop="@+id/imageView4"
+	            android:layout_marginLeft="2dp"
+	            android:layout_toRightOf="@+id/imageView4"
+	            android:text="圣光 Holy Light"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="#EEDC82"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/skill3desc"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/skill3name"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/skill3name"
+	            android:text="圣光可以医治同伴或者对不死族的敌人产生伤害。"
+	            android:textColor="#1874CD"
+	            android:textSize="12sp" />
+	
+	        <TextView
+	            android:id="@+id/skill3detaill"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:layout_alignLeft="@+id/imageView4"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/imageView4"
+	            android:text="使用间隔:5秒 魔法消耗:65\n距离80 作用范围:单个单位\n等级1:治疗200生命/伤害100生命\n等级2:治疗400生命/伤害200生命\n等级3:治疗600生命/伤害300生命"
+	            android:textColor="#1874CD" />
+	
+	    </RelativeLayout>
+        
+        <RelativeLayout
+	        android:id="@+id/relativelayout5"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/imageView1"
+	        android:layout_alignRight="@+id/tabelLayout"
+	        android:layout_below="@+id/relativelayout4"
+	        android:layout_marginTop="19dp" >
+	
+	        <View
+	            android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="#FF909090" />
+	        <ImageView
+	            android:id="@+id/imageView5"
+	            android:layout_width="64dp"
+	            android:layout_height="64dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="10dp"
+	            android:src="@drawable/holybolt" />
+	
+	        <TextView
+	            android:id="@+id/skill4name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignTop="@+id/imageView5"
+	            android:layout_marginLeft="2dp"
+	            android:layout_toRightOf="@+id/imageView5"
+	            android:text="圣光 Holy Light"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="#EEDC82"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/skill4desc"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/skill4name"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/skill4name"
+	            android:text="圣光可以医治同伴或者对不死族的敌人产生伤害。"
+	            android:textColor="#1874CD"
+	            android:textSize="12sp" />
+	
+	        <TextView
+	            android:id="@+id/skill4detaill"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:layout_alignLeft="@+id/imageView5"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/imageView5"
+	            android:text="使用间隔:5秒 魔法消耗:65\n距离80 作用范围:单个单位\n等级1:治疗200生命/伤害100生命\n等级2:治疗400生命/伤害200生命\n等级3:治疗600生命/伤害300生命"
+	            android:textColor="#1874CD" />
+	
+	    </RelativeLayout>
+        
+        <RelativeLayout
+	        android:id="@+id/relativelayout6"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/imageView1"
+	        android:layout_alignRight="@+id/tabelLayout"
+	        android:layout_below="@+id/relativelayout5"
+	        android:layout_marginTop="19dp" >
+	
+	        <View
+	            android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="#FF909090" />
+	        <ImageView
+	            android:id="@+id/imageView6"
+	            android:layout_width="64dp"
+	            android:layout_height="64dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="10dp"
+	            android:src="@drawable/holybolt" />
+	
+	        <TextView
+	            android:id="@+id/skill5name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignTop="@+id/imageView6"
+	            android:layout_marginLeft="2dp"
+	            android:layout_toRightOf="@+id/imageView6"
+	            android:text="圣光 Holy Light"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="#EEDC82"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/skill5desc"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/skill5name"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/skill5name"
+	            android:text="圣光可以医治同伴或者对不死族的敌人产生伤害。"
+	            android:textColor="#1874CD"
+	            android:textSize="12sp" />
+	
+	        <TextView
+	            android:id="@+id/skill5detaill"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:layout_alignLeft="@+id/imageView6"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/imageView6"
+	            android:text="使用间隔:5秒 魔法消耗:65\n距离80 作用范围:单个单位\n等级1:治疗200生命/伤害100生命\n等级2:治疗400生命/伤害200生命\n等级3:治疗600生命/伤害300生命"
+	            android:textColor="#1874CD" />
+	
+	    </RelativeLayout>
+        
+        <RelativeLayout
+	        android:id="@+id/relativelayout7"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/imageView1"
+	        android:layout_alignRight="@+id/tabelLayout"
+	        android:layout_below="@+id/relativelayout6"
+	        android:layout_marginTop="19dp" >
+	
+	        <View
+	            android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="#FF909090" />
+	        <ImageView
+	            android:id="@+id/imageView7"
+	            android:layout_width="64dp"
+	            android:layout_height="64dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="10dp"
+	            android:src="@drawable/holybolt" />
+	
+	        <TextView
+	            android:id="@+id/skill6name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignTop="@+id/imageView7"
+	            android:layout_marginLeft="2dp"
+	            android:layout_toRightOf="@+id/imageView7"
+	            android:text="圣光 Holy Light"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="#EEDC82"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/skill6desc"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/skill6name"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/skill6name"
+	            android:text="圣光可以医治同伴或者对不死族的敌人产生伤害。"
+	            android:textColor="#1874CD"
+	            android:textSize="12sp" />
+	
+	        <TextView
+	            android:id="@+id/skill6detaill"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:layout_alignLeft="@+id/imageView7"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/imageView7"
+	            android:text="使用间隔:5秒 魔法消耗:65\n距离80 作用范围:单个单位\n等级1:治疗200生命/伤害100生命\n等级2:治疗400生命/伤害200生命\n等级3:治疗600生命/伤害300生命"
+	            android:textColor="#1874CD" />
+	
+	    </RelativeLayout>
+        
+        <RelativeLayout
+	        android:id="@+id/relativelayout8"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/imageView1"
+	        android:layout_alignRight="@+id/tabelLayout"
+	        android:layout_below="@+id/relativelayout7"
+	        android:layout_marginTop="19dp" >
+	
+	        <View
+	            android:layout_width="match_parent"
+	            android:layout_height="1dp"
+	            android:background="#FF909090" />
+	        <ImageView
+	            android:id="@+id/imageView8"
+	            android:layout_width="64dp"
+	            android:layout_height="64dp"
+	            android:layout_alignParentLeft="true"
+	            android:layout_alignParentTop="true"
+	            android:layout_marginTop="10dp"
+	            android:src="@drawable/holybolt" />
+	
+	        <TextView
+	            android:id="@+id/skill7name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_alignTop="@+id/imageView8"
+	            android:layout_marginLeft="2dp"
+	            android:layout_toRightOf="@+id/imageView8"
+	            android:text="圣光 Holy Light"
+	            android:textAppearance="?android:attr/textAppearanceMedium"
+	            android:textColor="#EEDC82"
+	            android:textSize="14sp" />
+	
+	        <TextView
+	            android:id="@+id/skill7desc"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignLeft="@+id/skill7name"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/skill7name"
+	            android:text="圣光可以医治同伴或者对不死族的敌人产生伤害。"
+	            android:textColor="#1874CD"
+	            android:textSize="12sp" />
+	
+	        <TextView
+	            android:id="@+id/skill7detaill"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_marginTop="5dp"
+	            android:layout_alignLeft="@+id/imageView8"
+	            android:layout_alignParentRight="true"
+	            android:layout_below="@+id/imageView8"
+	            android:text="使用间隔:5秒 魔法消耗:65\n距离80 作用范围:单个单位\n等级1:治疗200生命/伤害100生命\n等级2:治疗400生命/伤害200生命\n等级3:治疗600生命/伤害300生命"
+	            android:textColor="#1874CD" />
+	
+	    </RelativeLayout>
+        
+    </RelativeLayout>
+
+</ScrollView>
